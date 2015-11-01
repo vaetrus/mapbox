@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title></title>
+    <link rel="stylesheet" href="css/travelLog.css">
+    <style></style>
+    <script src="js/travelLog.js"></script>
+  </head>
+
+  <body class="body">
+    <script>
+      L.mapbox.accessToken = 'pk.eyJ1IjoibmdvcXVhbmciLCJhIjoiY2lnZ2l5MGpuODRyNXR5bTZicm5ydjVyYSJ9.i5NluZU88X7Jrz-lYCvomQ';
+      var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([40, -74.50], 9);
+    </script>
+    <div id="divMap"></div>
+    <div id="divMenu"></div>
+    <div id="divBottom"></div>
+    <div id="divLegend"></div>
+    <div id="divSidebar">
+      <div id="mapinfo"></div>
+    </div>
+  </body>
+
+</html>
